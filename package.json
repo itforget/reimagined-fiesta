@@ -16,6 +16,10 @@
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@headlessui/react": "^1.7.19",
     "next": "14.2.3",
+<<<<<<< HEAD
+=======
+    "nodejs": "^0.0.0",
+>>>>>>> 490d8d6 (fix: darkMode)
     "react": "^18",
     "react-dom": "^18"
   },
