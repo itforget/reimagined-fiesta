@@ -17,11 +17,13 @@ export default function Weather() {
     fetchWeather();
   }, []);
 
-  if (!weather) return <div>Loading...</div>;
+  if (!weather) return <div className=" text-4xl font-extrabold">Loading...</div>;
 
   const iconId = weather.weather[0].icon;
   console.log(iconId);
   const imageUrl = `https://openweathermap.org/img/wn/${iconId}@2x.png`;
+
+  const temp = weather.main.temp
 
   return (
     <motion.div
@@ -35,8 +37,8 @@ export default function Weather() {
           <div className="flex flex-row items-center justify-center space-x-4 gap-6">
             <div>
               <p className="text-1xl font-bold">Temperatua atual</p>
-              <p className="text-3xl font-bold">
-                {weather.main.temp} °C
+              <p className={`text-3xl ${temp == 30 ? "text-red-600" : "text-blue-600"} font-bold`}>
+                {temp} °C
               </p>
             </div>
             <div>

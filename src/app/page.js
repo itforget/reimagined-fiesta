@@ -16,7 +16,7 @@ export default function Home() {
     <main className={`flex min-h-screen flex-col gap-8 ${darkMode ? "bg-gray-900 text-white" : "bg-[var(--foreground-rgb: 0, 0, 0, --background-start-rgb: 214, 219, 220 ,--background-end-rgb: 255, 255, 255)] text-black"}`}>
       <button onClick={toggleDarkMode} className='flex items-center h-auto w-auto justify-end p-3'>
         <motion.div
-animate={{ rotate: darkMode ? 360 : 0 }}
+          animate={{ rotate: darkMode ? 360 : 0 }}
           transition={{ duration: 1 }}
         >
           <FontAwesomeIcon icon={darkMode ? faMoon : faSun} size='2x' />
