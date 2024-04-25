@@ -20,7 +20,6 @@ export default function Weather() {
   if (!weather) return <div className=" text-4xl font-extrabold">Loading...</div>;
 
   const iconId = weather.weather[0].icon;
-  console.log(iconId);
   const imageUrl = `https://openweathermap.org/img/wn/${iconId}@2x.png`;
 
   const temp = weather.main.temp
