@@ -23,11 +23,9 @@ export default function Weather() {
   const imageUrl = `https://openweathermap.org/img/wn/${iconId}@2x.png`;
 
   return (
-    <div className="flex flex-col items-center justify-center space-y-4">
+    <div className="flex flex-col items-center justify-center space-y-4 mt-44">
       <h1 className=" text-5xl font-extrabold">Tempo Brasilia</h1>
-      <img src={imageUrl} width={100} height={100} alt="imagem" />
-      <div className="flex flex-col items-center justify-center space-y-4 my-48">
-        <h1 className=" text-5xl font-extrabold">Tempo Brasilia</h1>
+      <div className="flex flex-col items-center justify-center space-y-4 my-48 gap-9">
         <div className="flex flex-row items-center justify-center space-x-4 gap-6">
           <div>
             <p className="text-1xl font-bold">Temperatua atual</p>
